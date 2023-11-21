@@ -2,6 +2,7 @@ public class Map {
     private BST nodes;
     public Map() {
         nodes = new BST();
+        nodes.insert(new Node(new int[] {0, 0}));
     }
     public void show() {
         System.out.println("Map:");

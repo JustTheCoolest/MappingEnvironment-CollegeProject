@@ -1,0 +1,153 @@
+Simulation Environment:
+G G B R B B B R R G 
+R B R B B G B B B B 
+G R G B G G R R R R 
+B B G R G B B R B R 
+B G B R G B B R B G 
+R R R B B B R R R B 
+G B G R R R B G G R 
+R G G G R G R G R B 
+B B R R B B G G R B 
+R B B B G R R R R G 
+
+Bot 0 Position: 0, 0
+BB R G B B R G R B R 
+G B R B G R B G B B 
+B R G G B R G G R B 
+R B B R R B R G R B 
+B B G G G B R R B G 
+B G G B B B R G B R 
+B B R B B R B R G R 
+R B R R R R G G G R 
+R B R B B R G R R R 
+G B R R G B R B B G 
+Map:
+G 
+
+Bot 0 Position: 1, 0
+G BB G B B R G R B R 
+G B R B G R B G B B 
+B R G G B R G G R B 
+R B B R R B R G R B 
+B B G G G B R R B G 
+B G G B B B R G B R 
+B B R B B R B R G R 
+R B R R R R G G G R 
+R B R B B R G R R R 
+G B R R G B R B B G 
+Map:
+G R 
+
+Bot 0 Position: 0, 0
+BB R G B B R G R B R 
+G B R B G R B G B B 
+B R G G B R G G R B 
+R B B R R B R G R B 
+B B G G G B R R B G 
+B G G B B B R G B R 
+B B R B B R B R G R 
+R B R R R R G G G R 
+R B R B B R G R R R 
+G B R R G B R B B G 
+Map:
+G R 
+
+Bot 0 Position: 1, 0
+G BB G B B R G R B R 
+G B R B G R B G B B 
+B R G G B R G G R B 
+R B B R R B R G R B 
+B B G G G B R R B G 
+B G G B B B R G B R 
+B B R B B R B R G R 
+R B R R R R G G G R 
+R B R B B R G R R R 
+G B R R G B R B B G 
+Map:
+G R 
+
+Bot 0 Position: 2, 0
+G R BB B B R G R B R 
+G B R B G R B G B B 
+B R G G B R G G R B 
+R B B R R B R G R B 
+B B G G G B R R B G 
+B G G B B B R G B R 
+B B R B B R B R G R 
+R B R R R R G G G R 
+R B R B B R G R R R 
+G B R R G B R B B G 
+Map:
+G R G 
+
+Bot 0 Position: 3, 0
+G R G BB B R G R B R 
+G B R B G R B G B B 
+B R G G B R G G R B 
+R B B R R B R G R B 
+B B G G G B R R B G 
+B G G B B B R G B R 
+B B R B B R B R G R 
+R B R R R R G G G R 
+R B R B B R G R R R 
+G B R R G B R B B G 
+Map:
+G R G B 
+
+Bot 0 Position: 4, 0
+G R G B BB R G R B R 
+G B R B G R B G B B 
+B R G G B R G G R B 
+R B B R R B R G R B 
+B B G G G B R R B G 
+B G G B B B R G B R 
+B B R B B R B R G R 
+R B R R R R G G G R 
+R B R B B R G R R R 
+G B R R G B R B B G 
+Map:
+G R G B B 
+
+Bot 0 Position: 3, 0
+G R G BB B R G R B R 
+G B R B G R B G B B 
+B R G G B R G G R B 
+R B B R R B R G R B 
+B B G G G B R R B G 
+B G G B B B R G B R 
+B B R B B R B R G R 
+R B R R R R G G G R 
+R B R B B R G R R R 
+G B R R G B R B B G 
+Map:
+G R G B B 
+
+Bot 0 Position: 2, 0
+G R BB B B R G R B R 
+G B R B G R B G B B 
+B R G G B R G G R B 
+R B B R R B R G R B 
+B B G G G B R R B G 
+B G G B B B R G B R 
+B B R B B R B R G R 
+R B R R R R G G G R 
+R B R B B R G R R R 
+G B R R G B R B B G 
+Map:
+G R G B B 
+
+Bot 0 Position: 1, 0
+G BB G B B R G R B R 
+G B R B G R B G B B 
+B R G G B R G G R B 
+R B B R R B R G R B 
+B B G G G B R R B G 
+B G G B B B R G B R 
+B B R B B R B R G R 
+R B R R R R G G G R 
+R B R B B R G R R R 
+G B R R G B R B B G 
+Map:
+G R G B B 
+
+Simulation Complete
