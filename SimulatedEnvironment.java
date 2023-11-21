@@ -1,4 +1,4 @@
-import Color;
+// import Color;
 
 public class SimulatedEnvironment {
     private final int data[][];
@@ -11,6 +11,16 @@ public class SimulatedEnvironment {
                 data[i][j] = Color.pickRandom();
             }
         }
+    }
+    private int[] pickRandomPosition() {
+        int position[] = new int[2];
+        position[0] = (int) (Math.random() * width);
+        position[1] = (int) (Math.random() * height);
+        return position;
+    }
+    public int[] pickRandomPositionForBot(){
+        int bot_position[] = vectorSubtract(pickRandomPosition(), initial_position);
+        return bot_position;
     }
     private void constructor(int position[], int width, int height){
         this.width = width;
@@ -66,5 +76,11 @@ public class SimulatedEnvironment {
             path[i] = direction;
         }
         return path;
+    }
+    public int[] getIndices(int position[]){
+        int indices[] = new int[2];
+        indices[0] = position[0] + initial_position[0];
+        indices[1] = position[1] + initial_position[1];
+        return indices;
     }
 }
