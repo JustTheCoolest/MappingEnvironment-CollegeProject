@@ -6,12 +6,23 @@ public class SimulatedEnvironment {
     private int initial_position[];
     private int position[];
     private int width, height;
+    private int bot_index;
+    private void showData(){
+        System.out.println("Simulation Environment:");
+        for(int i = 0; i < width; ++i){
+            for(int j = 0; j < height; ++j){
+                System.out.print(Color.toString(data[i][j]) + " ");
+            }
+            System.out.println();
+        }
+    }
     private void fillData(){
         for(int i = 0; i < width; ++i){
             for(int j = 0; j < height; ++j){
                 data[i][j] = Color.pickRandom();
             }
         }
+        showData();
     }
     private int[] pickRandomPosition() {
         int position[] = new int[2];
@@ -35,14 +46,16 @@ public class SimulatedEnvironment {
         data = new int[width][height];
         fillData();
     }
-    public SimulatedEnvironment(int width, int height){
+    public SimulatedEnvironment(int bot_index, int width, int height){
+        this.bot_index = bot_index;
         position = pickRandomPosition();
         constructor(position, width, height);
     }
     public SimulatedEnvironment(int position[], int width, int height){
         constructor(position, width, height);
     }
-    public SimulatedEnvironment(SimulatedEnvironment env){
+    public SimulatedEnvironment(int bot_index, SimulatedEnvironment env){
+        this.bot_index = bot_index;
         this.width = env.width;
         this.height = env.height;
         this.initial_position = Arrays.copyOf(env.initial_position, env.initial_position.length);
@@ -107,7 +120,21 @@ public class SimulatedEnvironment {
         int indices[] = getIndices(position);
         return data[indices[0]][indices[1]];
     }
+    public void printPosition(){
+        System.out.println("Bot " + bot_index + " Position: " + position[0] + ", " + position[1]);
+        for(int row = 0; row < height; ++row){
+            for(int col = 0; col < width; ++col){
+                if(row == position[1] && col == position[0]){
+                    System.out.print("BB ");
+                }else{
+                    System.out.print(Color.toString(data[col][row]) + " ");
+                }
+            }
+            System.out.println();
+        }
+    }
     public void move(int direction){
+        printPosition();
         switch (direction) {
             case 0: // Move up
                 position[1]--;
