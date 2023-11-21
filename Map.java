@@ -25,8 +25,8 @@ public class Map {
             next = new Node(coordinates);
             nodes.insert(next);
         }
-        current[direction] = next;
-        next[Direction.inverse(direction)] = current;
+        current.adjacent[direction] = next;
+        next.adjacent[Direction.inverse(direction)] = current;
     }
     void writeData(int data, int[] coordinates) {
         nodes.search(coordinates).data = data;
