@@ -29,6 +29,7 @@ class Simulator{
 
     public static void simulateOneBot(Bot bot, SimulatedEnvironment env){
         int path[] = env.generateRandomPath(ConfigurationConstants.PATH_LENGTH);
+        System.out.println(path);
         for(int i = 0; i < path.length; ++i){
             move(path[i], bot, env);
         }
