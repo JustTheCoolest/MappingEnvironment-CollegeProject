@@ -1,3 +1,4 @@
+import java.util.Arrays;
 // import Bot;
 // import SimulatedEnvironment;
 // import ConfigurationConstants;
@@ -27,9 +28,10 @@ class Simulator{
         System.out.println("Simulation Complete");
     }
 
+
     public static void simulateOneBot(Bot bot, SimulatedEnvironment env){
         int path[] = env.generateRandomPath(ConfigurationConstants.PATH_LENGTH);
-        System.out.println(path);
+        System.out.println(Arrays.toString(path));
         for(int i = 0; i < path.length; ++i){
             move(path[i], bot, env);
         }

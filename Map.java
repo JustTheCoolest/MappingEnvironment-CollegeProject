@@ -14,7 +14,7 @@ public class Map {
             for (int j = min_x; j <= max_x; ++j) {
                 Node current = nodes.search(new int[] {j, i});
                 if (current == null) {
-                    System.out.print("0 ");
+                    System.out.print("  ");
                 } else {
                     System.out.print(Color.toString(current.data) + " ");
                 }
@@ -25,7 +25,6 @@ public class Map {
     }
     // Task : Switch to a previous_node as parameter system instead of coordinates as parameter for better efficiency
     void move(int direction, int[] coordinates) {
-        show();
         Node current = nodes.search(coordinates);
         switch (direction) {
             case 0: // Move up
@@ -48,6 +47,7 @@ public class Map {
         }
         current.adjacent[direction] = next;
         next.adjacent[Direction.inverse(direction)] = current;
+        show();
     }
     void writeData(int data, int[] coordinates) {
         nodes.search(coordinates).data = data;
