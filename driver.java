@@ -3,7 +3,7 @@
 // import ConfigurationConstants;
 
 class Simulator{
-    private void move(int direction, Bot bot, SimulatedEnvironment env){
+    private static void move(int direction, Bot bot, SimulatedEnvironment env){
         env.move(direction);
         bot.move(direction);
     }

@@ -88,4 +88,24 @@ public class SimulatedEnvironment {
         indices[1] = position[1] + initial_position[1];
         return indices;
     }
+    public int readData(int position[]){
+        int indices[] = getIndices(position);
+        return data[indices[0]][indices[1]];
+    }
+    public void move(int direction){
+        switch (direction) {
+            case 0: // Move up
+                position[1]--;
+                break;
+            case 1: // Move down
+                position[1]++;
+                break;
+            case 2: // Move left
+                position[0]--;
+                break;
+            case 3: // Move right
+                position[0]++;
+                break;
+        }
+    }
 }
