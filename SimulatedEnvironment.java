@@ -19,7 +19,10 @@ public class SimulatedEnvironment {
         return position;
     }
     public int[] pickRandomPositionForBot(){
-        int bot_position[] = vectorSubtract(pickRandomPosition(), initial_position);
+        int newposition[] = pickRandomPosition();
+        int bot_position[] = new int[2];
+        bot_position[0] = newposition[0] - initial_position[0];
+        bot_position[1] = newposition[1] - initial_position[1];
         return bot_position;
     }
     private void constructor(int position[], int width, int height){
