@@ -8,7 +8,7 @@ public class Bot {
         coordinates[0] = 0;
         coordinates[1] = 0;
     }
-    public Bot(coordinates, Map map){
+    public Bot(int[] coordinates, Map map){
         this.map = map;
         this.coordinates = copy(coordinates);
     }
