@@ -4,8 +4,7 @@ import ConfigurationConstants;
 
 class Simulator{
     public static void simulate(Bot bot, SimulatedEnvironment env){
-        int path[] = env.generateRandomPath(size: ConfigurationConstants.PATH_LENGTH); 
-        bot.setPath(path);
+        int path[] = env.generateRandomPath(size: ConfigurationConstants.PATH_LENGTH);
         for(int i = 0; i < path.length/2; ++i){
             bot.move(path[i]);
         }
@@ -14,10 +13,9 @@ class Simulator{
         int coordinates[] = env.getUnvisitedCoordinates();
         env2.setStart(env.getIndices(coordinates));
         int path2[] = env.generateRandomPath(coordinates = coordinates, size = ConfigurationConstants.PATH_LENGTH - path.length/2);
-        bot2.setPath(path2);
         for(int i = path.length/2; i < path.length; ++i){
             bot.move(path[i]);
-            bot2.move(path[i]);
+            bot2.move(path2[i]);
         }
         System.out.println("Simulation Complete");
     }
