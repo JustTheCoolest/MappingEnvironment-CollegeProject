@@ -7,7 +7,7 @@ class Simulator{
         env.move(direction);
         bot.move(direction);
     }
-    public static void simulate(Bot bot, SimulatedEnvironment env){
+    public static void xsimulate(Bot bot, SimulatedEnvironment env){
         int path[] = env.generateRandomPath(ConfigurationConstants.PATH_LENGTH);
         for(int i = 0; i < path.length/2; ++i){
             move(path[i], bot, env);
@@ -26,6 +26,14 @@ class Simulator{
         }
         System.out.println("Simulation Complete");
     }
+
+    public static void simulateOneBot(Bot bot, SimulatedEnvironment env){
+        int path[] = env.generateRandomPath(ConfigurationConstants.PATH_LENGTH);
+        for(int i = 0; i < path.length; ++i){
+            move(path[i], bot, env);
+        }
+        System.out.println("Simulation Complete");
+    }
 }
 
 class Main{
@@ -33,6 +41,7 @@ class Main{
         Bot bot = new Bot();
         SimulatedEnvironment env = new SimulatedEnvironment(0, ConfigurationConstants.ENV_WIDTH, ConfigurationConstants.ENV_HEIGHT); // dimensions: 2
         bot.setEnvironment(env);
-        Simulator.simulate(bot, env);
+        // Simulator.simulate(bot, env);
+        Simulator.simulateOneBot(bot, env);
     }
 }

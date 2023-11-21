@@ -15,6 +15,7 @@ public class SimulatedEnvironment {
             }
             System.out.println();
         }
+        System.out.println();
     }
     private void fillData(){
         for(int i = 0; i < width; ++i){

@@ -20,6 +20,7 @@ public class Map {
             }
             System.out.println();
         }
+        System.out.println();
     }
     // Task : Switch to a previous_node as parameter system instead of coordinates as parameter for better efficiency
     void move(int direction, int[] coordinates) {
