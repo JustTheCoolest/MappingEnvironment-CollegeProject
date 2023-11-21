@@ -12,8 +12,8 @@ class Simulator{
         for(int i = 0; i < path.length/2; ++i){
             move(path[i], bot, env);
         }
-        Bot bot2 = new Bot();
         int coordinates[] = env.pickRandomPositionForBot(); // env.getUnvisitedCoordinates();
+        Bot bot2 = new Bot(coordinates, bot.map);
         SimulatedEnvironment env2 = new SimulatedEnvironment(env.getIndices(coordinates), ConfigurationConstants.ENV_WIDTH, ConfigurationConstants.ENV_HEIGHT);
         int path2[] = env.generateRandomPath(coordinates = coordinates, size = ConfigurationConstants.PATH_LENGTH - path.length/2);
         for(int i = path.length/2; i < path.length; ++i){
