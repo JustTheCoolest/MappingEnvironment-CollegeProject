@@ -16,7 +16,7 @@ public class Map {
                 if (current == null) {
                     System.out.print("  ");
                 } else {
-                    System.out.print(Color.toString(current.data) + " ");
+                    System.out.print(Colour.toString(current.data) + " ");
                 }
             }
             System.out.println();

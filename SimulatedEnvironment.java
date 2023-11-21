@@ -1,5 +1,5 @@
 import java.util.Arrays;
-// import Color;
+// import Colour;
 
 public class SimulatedEnvironment {
     private int data[][];
@@ -11,7 +11,7 @@ public class SimulatedEnvironment {
         System.out.println("Simulation Environment:");
         for(int i = 0; i < width; ++i){
             for(int j = 0; j < height; ++j){
-                System.out.print(Color.toString(data[i][j]) + " ");
+                System.out.print(Colour.toString(data[i][j]) + " ");
             }
             System.out.println();
         }
@@ -20,7 +20,7 @@ public class SimulatedEnvironment {
     private void fillData(){
         for(int i = 0; i < width; ++i){
             for(int j = 0; j < height; ++j){
-                data[i][j] = Color.pickRandom();
+                data[i][j] = Colour.pickRandom();
             }
         }
         showData();
@@ -126,9 +126,9 @@ public class SimulatedEnvironment {
         for(int row = 0; row < height; ++row){
             for(int col = 0; col < width; ++col){
                 if(row == position[1] && col == position[0]){
-                    System.out.print("BB ");
+                    System.out.print("\u001B[42m"+"A"+"\u001B[0m"+" ");
                 }else{
-                    System.out.print(Color.toString(data[col][row]) + " ");
+                    System.out.print(Colour.toString(data[col][row]) + " ");
                 }
             }
             System.out.println();
