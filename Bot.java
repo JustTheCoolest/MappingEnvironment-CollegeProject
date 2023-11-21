@@ -17,6 +17,6 @@ public class Bot {
     }
     public void move(int direction){
         this.map.move(direction, this.coordinates);
-        this.map.writeData(this.env.readData());
+        this.map.writeData(this.env.readData(), this.coordinates);
     }
 }
