@@ -1,5 +1,3 @@
-import java.io.ObjectInputFilter.Config;
-
 import Bot;
 import SimulatedEnvironment;
 import ConfigurationConstants;
@@ -11,8 +9,11 @@ class Simulator{
         for(int i = 0; i < path.length/2; ++i){
             bot.move(path[i]);
         }
-        Bot bot2 = new Bot(bot);
-        int path2[] = env.generateRandomPath(size: ConfigurationConstants.PATH_LENGTH - path.length/2);
+        SimulationEnvironment env2 = new SimulationEnvironment(env);
+        Bot bot2 = new Bot();
+        int coordinates[] = env.getUnvisitedCoordinates();
+        env2.setStart(env.getIndices(coordinates));
+        int path2[] = env.generateRandomPath(coordinates = coordinates, size = ConfigurationConstants.PATH_LENGTH - path.length/2);
         bot2.setPath(path2);
         for(int i = path.length/2; i < path.length; ++i){
             bot.move(path[i]);
