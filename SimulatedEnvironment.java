@@ -1,10 +1,11 @@
+import java.util.Arrays;
 // import Color;
 
 public class SimulatedEnvironment {
-    private final int data[][];
-    private final int initial_position[];
+    private int data[][];
+    private int initial_position[];
     private int position[];
-    private final int width, height;
+    private int width, height;
     private void fillData(){
         for(int i = 0; i < width; ++i){
             for(int j = 0; j < height; ++j){
@@ -25,19 +26,20 @@ public class SimulatedEnvironment {
         bot_position[1] = newposition[1] - initial_position[1];
         return bot_position;
     }
+
     private void constructor(int position[], int width, int height){
         this.width = width;
         this.height = height;
-        this.initial_position = copy(position);
+        this.initial_position = Arrays.copyOf(position, position.length);
         this.position = position;
         data = new int[width][height];
         fillData();
     }
-    public SimulationEnvironment(int width, int height){
+    public SimulatedEnvironment(int width, int height){
         position = pickRandomPosition();
         constructor(position, width, height);
     }
-    public SimulationEnvironment(int position[], int width, int height){
+    public SimulatedEnvironment(int position[], int width, int height){
         constructor(position, width, height);
     }
     private boolean isValidMove(int position[], int direction) {
@@ -57,7 +59,7 @@ public class SimulatedEnvironment {
         }
     }
     public int[] generateRandomPath(int size) {
-        int local_position[] = copy(position);
+        int local_position[] = Arrays.copyOf(position, position.length);
         int path[] = new int[size];
         for (int i = 0; i < size; ++i) {
             int direction;
