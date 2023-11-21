@@ -42,6 +42,19 @@ public class SimulatedEnvironment {
     public SimulatedEnvironment(int position[], int width, int height){
         constructor(position, width, height);
     }
+    public SimulatedEnvironment(SimulatedEnvironment env){
+        this.width = env.width;
+        this.height = env.height;
+        this.initial_position = Arrays.copyOf(env.initial_position, env.initial_position.length);
+        this.position = Arrays.copyOf(env.position, env.position.length);
+        data = new int[width][height];
+        // Task: Loop to cpy? There must be a better way
+        for(int i = 0; i < width; ++i){
+            for(int j = 0; j < height; ++j){
+                data[i][j] = env.data[i][j];
+            }
+        }
+    }
     private boolean isValidMove(int position[], int direction) {
         switch (direction) {
             case -1: // Rest

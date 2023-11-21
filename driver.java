@@ -22,7 +22,7 @@ class Simulator{
         int path2[] = env2.generateRandomPath(ConfigurationConstants.PATH_LENGTH - path.length/2);
         for(int i = path.length/2; i < path.length; ++i){
             move(path[i], bot, env);
-            move(path2[i], bot2, env2);
+            move(path2[i-path.length/2], bot2, env2);
         }
         System.out.println("Simulation Complete");
     }
