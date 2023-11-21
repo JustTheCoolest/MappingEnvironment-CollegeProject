@@ -42,6 +42,8 @@ public class SimulatedEnvironment {
     }
     private boolean isValidMove(int position[], int direction) {
         switch (direction) {
+            case -1: // Rest
+                return true;
             case 0: // Move up
                 return position[1] > 0;
             case 1: // Move down
