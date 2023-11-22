@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 public class Bot {
-    private SimulatedEnvironment env;
+    SimulatedEnvironment env;
     public Map map;
     private int coordinates[];
     private void constructor(){
@@ -21,6 +21,7 @@ public class Bot {
     public Bot(Bot bot){
         this.map = bot.map;
         this.coordinates = Arrays.copyOf(bot.coordinates, bot.coordinates.length);
+        this.env = bot.env;
         constructor();
     }
     public void setEnvironment(SimulatedEnvironment env){
