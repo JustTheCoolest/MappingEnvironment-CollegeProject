@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 class Simulator{
     private static void move(int direction, Bot bot, SimulatedEnvironment env){
-        env.move(direction);
+        env.move(direction, bot.terminal_colour);
         bot.move(direction);
     }
     public static void simulate(Bot bot, SimulatedEnvironment env){
@@ -18,7 +18,7 @@ class Simulator{
         // Bot bot2 = new Bot(coordinates, bot.map);
         // SimulatedEnvironment env2 = new SimulatedEnvironment(env.getIndices(coordinates), ConfigurationConstants.ENV_WIDTH, ConfigurationConstants.ENV_HEIGHT);
         // int path2[] = env.generateRandomPath(coordinates = coordinates, size = ConfigurationConstants.PATH_LENGTH - path.length/2);
-        Bot bot2 = new Bot(bot);
+        Bot bot2 = new Bot("\u001B[34m", bot);
         SimulatedEnvironment env2 = new SimulatedEnvironment(1, env);
         int path2[] = env2.generateRandomPath(ConfigurationConstants.PATH_LENGTH - path.length/2);
         for(int i = path.length/2; i < path.length; ++i){
@@ -41,7 +41,7 @@ class Simulator{
 
 class Main{
     public static void main(String[] args){
-        Bot bot = new Bot();
+        Bot bot = new Bot("\u001B[32m");
         SimulatedEnvironment env = new SimulatedEnvironment(0, ConfigurationConstants.ENV_WIDTH, ConfigurationConstants.ENV_HEIGHT); // dimensions: 2
         bot.setEnvironment(env);
         Simulator.simulate(bot, env);

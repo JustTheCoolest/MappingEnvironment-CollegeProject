@@ -16,7 +16,7 @@ public class Map {
                 if (current == null) {
                     System.out.print("  ");
                 } else {
-                    System.out.print(Colour.toString(current.data) + " ");
+                    System.out.print(current.who_colour + Colour.toString(current.data) + "\u001B[0m" + " ");
                 }
             }
             System.out.println();
@@ -49,7 +49,9 @@ public class Map {
         next.adjacent[Direction.inverse(direction)] = current;
         show();
     }
-    void writeData(int data, int[] coordinates) {
-        nodes.search(coordinates).data = data;
+    void writeData(int data, String who_colour, int[] coordinates) {
+        Node current = nodes.search(coordinates);
+        current.data = data;
+        current.who_colour = who_colour;
     }
 }

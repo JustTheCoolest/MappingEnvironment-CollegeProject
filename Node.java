@@ -3,6 +3,7 @@ public class Node {
     int y;
     Node adjacent[] = new Node[4];
     int data;
+    String who_colour;
 
     public Node(int coordinates[]) {
         this.x = coordinates[0];

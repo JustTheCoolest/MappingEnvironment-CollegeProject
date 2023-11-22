@@ -1,0 +1,172 @@
+goto@DESKTOP-JG3EPBN:~/Projects/MappingWithHashing$  cd /home/goto/Projects/MappingWithHashing ; /usr/bin/env /usr/lib/jvm/java-19-openjdk-amd64/bin/java -agentlib:jdwp=transport=dt_socket,server=n,suspend=y,address=localhost:43363 -XX:+ShowCodeDetailsInExceptionMessages -cp /home/goto/.vscode-server/data/User/workspaceStorage/b7c89a0fac5f2be4583239e9c6052069/redhat.java/jdt_ws/MappingWithHashing_68fcdc2a/bin Main 
+Simulation Environment:
+G G B G G R B R G G 
+B R B R B G R R G G 
+G R G G R G B G G B 
+R R G R B R G G G G 
+R R R B G G R B R G 
+G R R G B G B R B B 
+G G G G B G B B G R 
+R B R G G G G B R B 
+B B R B G G B R R G 
+G R R G G R B R R R 
+
+[1, 1, 0, 0, 3, 3, 2, 2, 3, 1]
+Bot 0 Position: 0, 0
+BB B G R R G G R B G 
+G R R R R R G B B R 
+B B G G R R G R R R 
+G R G R B G G G B G 
+G B R B G B B G G G 
+R G G R G G G G G R 
+B R B G R B B G B B 
+R R G G B R B B R R 
+G G G G R B G R R R 
+G G B G G B R B G R 
+Map:
+G 
+
+Bot 0 Position: 0, 1
+G B G R R G G R B G 
+BB R R R R R G B B R 
+B B G G R R G R R R 
+G R G R B G G G B G 
+G B R B G B B G G G 
+R G G R G G G G G R 
+B R B G R B B G B B 
+R R G G B R B B R R 
+G G G G R B G R R R 
+G G B G G B R B G R 
+Map:
+G 
+G 
+
+Bot 0 Position: 0, 2
+G B G R R G G R B G 
+G R R R R R G B B R 
+BB B G G R R G R R R 
+G R G R B G G G B G 
+G B R B G B B G G G 
+R G G R G G G G G R 
+B R B G R B B G B B 
+R R G G B R B B R R 
+G G G G R B G R R R 
+G G B G G B R B G R 
+Map:
+G 
+G 
+B 
+
+Bot 0 Position: 0, 1
+G B G R R G G R B G 
+BB R R R R R G B B R 
+B B G G R R G R R R 
+G R G R B G G G B G 
+G B R B G B B G G G 
+R G G R G G G G G R 
+B R B G R B B G B B 
+R R G G B R B B R R 
+G G G G R B G R R R 
+G G B G G B R B G R 
+Map:
+G 
+G 
+B 
+
+Bot 0 Position: 0, 0
+BB B G R R G G R B G 
+G R R R R R G B B R 
+B B G G R R G R R R 
+G R G R B G G G B G 
+G B R B G B B G G G 
+R G G R G G G G G R 
+B R B G R B B G B B 
+R R G G B R B B R R 
+G G G G R B G R R R 
+G G B G G B R B G R 
+Map:
+G 
+G 
+B 
+
+Bot 0 Position: 1, 0
+G BB G R R G G R B G 
+G R R R R R G B B R 
+B B G G R R G R R R 
+G R G R B G G G B G 
+G B R B G B B G G G 
+R G G R G G G G G R 
+B R B G R B B G B B 
+R R G G B R B B R R 
+G G G G R B G R R R 
+G G B G G B R B G R 
+Map:
+G B 
+G 0 
+B 0 
+
+Bot 0 Position: 2, 0
+G B BB R R G G R B G 
+G R R R R R G B B R 
+B B G G R R G R R R 
+G R G R B G G G B G 
+G B R B G B B G G G 
+R G G R G G G G G R 
+B R B G R B B G B B 
+R R G G B R B B R R 
+G G G G R B G R R R 
+G G B G G B R B G R 
+Map:
+G B G 
+G 0 0 
+B 0 0 
+
+Bot 0 Position: 1, 0
+G BB G R R G G R B G 
+G R R R R R G B B R 
+B B G G R R G R R R 
+G R G R B G G G B G 
+G B R B G B B G G G 
+R G G R G G G G G R 
+B R B G R B B G B B 
+R R G G B R B B R R 
+G G G G R B G R R R 
+G G B G G B R B G R 
+Map:
+G B G 
+G 0 0 
+B 0 0 
+
+Bot 0 Position: 0, 0
+BB B G R R G G R B G 
+G R R R R R G B B R 
+B B G G R R G R R R 
+G R G R B G G G B G 
+G B R B G B B G G G 
+R G G R G G G G G R 
+B R B G R B B G B B 
+R R G G B R B B R R 
+G G G G R B G R R R 
+G G B G G B R B G R 
+Map:
+G B G 
+G 0 0 
+B 0 0 
+
+Bot 0 Position: 1, 0
+G BB G R R G G R B G 
+G R R R R R G B B R 
+B B G G R R G R R R 
+G R G R B G G G B G 
+G B R B G B B G G G 
+R G G R G G G G G R 
+B R B G R B B G B B 
+R R G G B R B B R R 
+G G G G R B G R R R 
+G G B G G B R B G R 
+Map:
+G B G 
+G 0 0 
+B 0 0 
+
+Simulation Complete

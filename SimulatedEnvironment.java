@@ -121,12 +121,12 @@ public class SimulatedEnvironment {
         int indices[] = getIndices(position);
         return data[indices[0]][indices[1]];
     }
-    public void printPosition(){
+    public void printPosition(String terminal_colour){
         System.out.println("Bot " + bot_index + " Position: " + position[0] + ", " + position[1]);
         for(int row = 0; row < height; ++row){
             for(int col = 0; col < width; ++col){
                 if(row == position[1] && col == position[0]){
-                    System.out.print("\u001B[42m"+"A"+"\u001B[0m"+" ");
+                    System.out.print(terminal_colour+"A"+"\u001B[0m"+" ");
                 }else{
                     System.out.print(Colour.toString(data[col][row]) + " ");
                 }
@@ -134,8 +134,8 @@ public class SimulatedEnvironment {
             System.out.println();
         }
     }
-    public void move(int direction){
-        printPosition();
+    public void move(int direction, String terminal_colour){
+        printPosition(terminal_colour);
         switch (direction) {
             case 0: // Move up
                 position[1]--;
