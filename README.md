@@ -1,5 +1,7 @@
 # MappingWithHashing
 Contributors:
-Andhavarapu Balu
-Ishan D. Jain
+Andhavarapu Balu,
+
+Ishan D. Jain,
+
 P. Akhil Tej
